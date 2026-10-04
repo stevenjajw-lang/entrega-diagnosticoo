@@ -1,0 +1,17 @@
+{
+  "name": "despliegue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tablero.js",
+  "scripts": {
+    "start": "node tablero.js",
+    "dev": "node tablero.js",
+    "diagnostico": "node diagnostico.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
