@@ -1,10 +1,10 @@
-// bot.js - Lógica del Bot determinista (v0.1)
+// bot.js - Lógica del Bot  (v0.1)
 
 function decidirMovimiento(estadoJSON) {
-    // Convertimos el texto JSON a objeto JavaScript si viene en formato string
+  
     const estado = typeof estadoJSON === 'string' ? JSON.parse(estadoJSON) : estadoJSON;
 
-    // Regla determinista básica: seleccionar la primera pieza disponible y moverla 'derecha'
+    // Regla seleccionar la primera pieza disponible y moverla a la derechha
     const pieza = estado.piezas && estado.piezas.length > 0 ? estado.piezas[0].id : "P1";
     const direcciones = ["arriba", "abajo", "izquierda", "derecha"];
     
@@ -17,14 +17,14 @@ function decidirMovimiento(estadoJSON) {
     };
 }
 
-// Datos de prueba en formato JSON
+// Datos de prueba 
 const estadoEjemplo = {
     turno: 1,
     piezas: [{ id: "bot-1", posicion: [0, 0] }],
     tableroTamano: 10
 };
 
-console.log("=== EJECUCIÓN DEL BOT v0.1 ===");
+console.log(" EJECUCIÓN DEL BOT v0.1 ");
 console.log("Estado de entrada:", estadoEjemplo);
 console.log("Respuesta del Bot:", decidirMovimiento(estadoEjemplo));
 

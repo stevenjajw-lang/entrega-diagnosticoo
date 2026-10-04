@@ -1,6 +1,6 @@
-// ==========================================
+
 // 1. GENERADOR DETERMINISTA CON SEMILLA
-// ==========================================
+
 function crearGeneradorSemilla(semilla) {
     let s = semilla;
     return function() {
@@ -9,9 +9,9 @@ function crearGeneradorSemilla(semilla) {
     };
 }
 
-// ==========================================
+
 // 2. CREACIÓN DEL TABLERO DE 10x10 Y CASAS
-// ==========================================
+
 function inicializarTablero(semilla, cantidadCasas = 10) {
     const TAMANO = 10;
     let tablero = Array.from({ length: TAMANO }, () => Array(TAMANO).fill(0));
@@ -31,9 +31,9 @@ function inicializarTablero(semilla, cantidadCasas = 10) {
     return tablero;
 }
 
-// ==========================================
+
 // 3. CALCULAR MOVIMIENTOS VÁLIDOS
-// ==========================================
+
 function obtenerMovimientosValidos(fila, col, tablero) {
     const TAMANO = 10;
     const movimientos = [];
@@ -59,9 +59,9 @@ function obtenerMovimientosValidos(fila, col, tablero) {
     return movimientos;
 }
 
-// ==========================================
+
 // 4. LLAMADAS Y SALIDA EN TERMINAL
-// ==========================================
+
 console.log("========================================");
 console.log(" TABLERO 10x10 Y REGLAS DE MOVIMIENTO ");
 console.log("========================================\n");
