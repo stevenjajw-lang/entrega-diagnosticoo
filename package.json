@@ -4,8 +4,9 @@
   "description": "",
   "main": "tablero.js",
   "scripts": {
-    "start": "node tablero.js",
-    "dev": "node tablero.js",
+    "start": "node bot.js",
+    "dev": "node bot.js",
+    "tablero": "node tablero.js",
     "diagnostico": "node diagnostico.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
